@@ -62,15 +62,14 @@ describe("Test TODOs API",function(){
       },
       function(error, response, body){
 
-        // convert the response to json
-		//console.log(body);
-        //var _body = {};
-        //try{
-        //  _body = JSON.parse(body);
-        //}
-        //catch(e){
-        //  _body = {};
-        //}
+
+        var _body = {};
+        try{
+         _body = JSON.parse(body);
+        }
+        catch(e){
+         _body = {};
+        }
 		console.log(body);
         // using chai expect function, lets check the result: no status code is returned
 	    expect(body[2].id).to.equal(3);
@@ -103,9 +102,10 @@ describe("Test TODOs API",function(){
         //}
 		console.log(body);
         // using chai expect function, lets check the result: no status code is returned
-	    expect(body[3].id).to.equal(3);
-		expect(body[3].todo).to.equal('add redit');
-		expect(body[3].status).to.equal('inprogress');
+	    
+		expect(body[2].todo).to.equal('add redit');
+		expect(body[2].status).to.equal('inprogress');
+    expect(body[2].id).to.equal(3);
 
         done(); // callback the test runner to indicate the end...
       }
