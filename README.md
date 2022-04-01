@@ -20,15 +20,18 @@ Then to run the application, run:
 
 npm run start
 
-Now its time to install the packages/items we need to proceed with the tests
+Now its time to install the packages/items we need to proceed with the tests :
 
 npm install mocha -g --save-dev
 npm install chai --save-dev
 npm install should --save-dev
 npm install request --save-dev
 
+
 The installed packages are:
-    Mocha — Test Framework
-    Chai — Test Framework
-    Should — Library to extend the tests
-    Request — To execute API calls
+
+Mocha : Test Framework
+Chai : Test Framework
+Should : Library to extend the tests
+Request :  To execute API calls
+
