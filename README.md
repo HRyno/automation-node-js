@@ -1,2 +1,2 @@
-# automation-node-js
-Basic introduction to node js automation
+# Stitch Todo List Assessment
+Basic automated tests for a Todo List for Stitch Users
